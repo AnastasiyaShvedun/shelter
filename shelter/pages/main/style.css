@@ -8,6 +8,7 @@
 .wrapper {
     margin: 0 auto;
     width: 1280px;
+    overflow: hidden;
 }
 
 .start-screen {
@@ -368,7 +369,7 @@ h3 {
 
 .Donation-content {
     position: relative;
-    top: 80px;
+
     width: 915px;
     height: 282px;
     margin: 80px 183px 100px;
@@ -459,9 +460,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
-    top: 40px;
-    margin: 0 40px;
+
+    margin: 40px;
+    margin-bottom: 0px;
 }
 
 .footer-content h3 {
@@ -499,6 +500,13 @@ footer {
     height: 32px;
 }
 
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 160px;
+}
+
 footer h4 {
     font-family: 'Georgia';
     font-style: normal;
@@ -514,4 +522,164 @@ footer h4 {
     flex-direction: row;
     justify-content: start;
     gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 768px;
+        height: auto;
+    }
+
+    .header {
+        width: 708px;
+        height: 60px;
+        top: 30px;
+    }
+
+    .start-screen-content {
+        width: 569px;
+        height: 1015px;
+        margin-top: 90px;
+
+    }
+
+    .Content {
+        width: 569px;
+        height: 1015px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 100px 0 99px;
+
+    }
+
+    .start-text {
+        width: 460px;
+        height: 322px;
+        margin: 0px auto;
+    }
+
+    .Content img {
+        width: 569px;
+        height: 593px;
+        margin-left: 70px;
+    }
+
+    /* about */
+    .about {
+        height: 1048px;
+    }
+
+    .about-content {
+        width: 437px;
+        height: 868px;
+        margin: 80px auto;
+        flex-direction: column-reverse;
+    }
+
+    .about-content img {
+        width: 300px;
+        height: 408px;
+        margin: 80px auto 0;
+    }
+
+    /* pets */
+    .pets-container {
+        width: 708px;
+        height: 697px;
+        margin: 0px 30px 100px;
+    }
+
+    .pets-container h3 {
+        margin: 0 154px;
+    }
+
+    .carousel {
+        gap: 40px;
+    }
+
+    #three {
+        display: none;
+    }
+
+    .know {
+        margin-left: 224px;
+    }
+
+    /* help */
+    .help {
+        height: 779px;
+    }
+
+    .help h3 {
+        margin: 80px 220px 60px;
+    }
+
+    .list {
+        width: 630px;
+        height: 449px;
+        margin: 60px 69px 100px;
+        column-gap: 60px;
+    }
+
+    .list-item {
+        width: 170px;
+        height: 113px;
+    }
+
+    #two {
+        margin-left: 0px;
+    }
+
+    /* donation */
+    .donation {
+        height: 783px;
+    }
+
+    .Donation-content {
+        height: 603px;
+        width: 505px;
+        margin: 80px auto 100px;
+        flex-direction: column-reverse;
+
+    }
+
+    .donation-text {
+        margin: 0 auto 60px;
+    }
+
+    /* footer */
+    footer {
+        height: 639px;
+    }
+
+    .address,
+    .contacts {
+        width: 302px;
+        height: 234px;
+    }
+
+    .footer-content {
+        height: 609px;
+        flex-direction: column;
+        width: 640px;
+
+        margin: 30px 64px 0;
+
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 60px;
+    }
+
+    footer img {
+        width: 300px;
+        height: 310px;
+        margin-left: 170px;
+    }
+
+
 }
